@@ -123,12 +123,17 @@
           <div class="card">
             <div class="card-body p-5">
               <h3 class="pb-3">Make a reservation</h3>
-           <form action="formulario.php" method="POST">
-Seu Nome : <input type="text" name="nome"><br>
-Seu E-mail : <input type="text" name="email"><br>
-Comentários : <textarea name="comentarios"></textarea><br>
-<input type="submit" value="Enviar">
-</form> 
+           <form action="https://formspree.io/gioopasquale@gmail.com" method="POST">
+                <div class="form-group"> <label>Name</label>
+                  <input class="form-control" name="name" required="required" pattern="[a-zA-Z\s]+$" placeholder="Your name, please"> </div>
+                <div class="form-group"> <label>Time</label>
+                  <input type="time" name="horario" required="required" class="form-control"> </div>
+                <div class="form-group">  <label>People</label>
+                  <input type="number" name="numero de pessoas" required="required" class="form-control" placeholder="2"> </div>
+                <button type="submit" class="btn mt-2 btn-outline-dark">Reserve</button>
+                  <input type="text" name="_gotcha" style="display:none" />
+                 <input type="hidden" name="_next" value="thanks.html" />
+              </form>
             </div>
           </div>
         </div>
