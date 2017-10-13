@@ -6,10 +6,10 @@ $para = "emaildestinatario@teste.com";
 $assunto = "Contato do através do site ...";
 
 // Campos do formulário de contato
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$telefone = $_POST['tel'];
-$mensagem = $_POST['conteudo'];
+$nome = $_GET['nome'];
+$email = $_GET['email'];
+$telefone = $_GET['tel'];
+$mensagem = $_GET['conteudo'];
 
 // Monta o corpo da mensagem com os campos
 $corpo = "<html><body>";
