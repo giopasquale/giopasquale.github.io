@@ -123,12 +123,23 @@
           <div class="card">
             <div class="card-body p-5">
               <h3 class="pb-3">Make a reservation</h3>
-             <form action="formulario.php" method="POST">
-    Seu Nome : <input type="text" name="nome"><br>
-    Seu E-mail : <input type="text" name="email"><br>
-    Comentários : <textarea name="comentarios"></textarea><br>
-    <input type="submit" value="Enviar">
-    </form> 
+            <form name="form1" method="post" action="enviar.php">
+                    <p>Nome:
+                     <input name="nome" type="text" id="nome">
+                    </p>
+                    <p>Email:
+                        <input name="email" type="text" id="email">
+                    </p>
+                    <p>Assunto:
+                        <input name="assunto" type="text" id="assunto">
+                    </p>
+                    <p>Mensagem:<br>
+                        <textarea name="mensagem" wrap="VIRTUAL" id="mensagem"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" name="Submit" value="Enviar">
+                    </p>
+                </form>
             </div>
           </div>
         </div>
